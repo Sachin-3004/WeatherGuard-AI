@@ -82,16 +82,15 @@ Response:
   "evidence": "Temperature of 55.0°C breaches physical terrestrial limits (-20°C to 60°C)."
 }
 ```
-
-### 2. Backend Files (`backend/`)
-
-#### `backend/requirements.txt`
-```text
-fastapi>=0.100.0
-uvicorn>=0.22.0
-scikit-learn>=1.3.0
-numpy>=1.24.0
-pandas>=2.0.0
-joblib>=1.3.0
-pydantic>=2.0.0
+### 2. Git Commands to Push to GitHub
+​Once all the files are saved inside C:\weatherguard-ai\, open Command Prompt in C:\weatherguard-ai and run:
+```cmd
+cd C:\weatherguard-ai
+git init
+git add .
+git commit -m "Initial commit: WeatherGuard AI SIH26073 Prototype"
+git branch -M main
+git remote add origin https://github.com/Sachin-3004/weatherguard-ai.git
+git push -u origin main
 ```
+

@@ -31,6 +31,7 @@ WeatherGuard AI is a full-stack meteorological telemetry validation engine built
 [Explainable AI (XAI) & Non-Destructive Imputation] ──► [React Operations Dashboard]
 ```
 Quick Start Guide
+
 ​1. Start the Python ML Backend
 ```bash
 cd backend
@@ -43,4 +44,41 @@ venv\Scripts\activate
 pip install -r requirements.txt
 python -m ml_engine.training
 python -m uvicorn ml_engine.api:app --host 127.0.0.1 --port 8000 --reload
+```
+
+2. Start the React Dashboard
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Open http://localhost:5173/ in your browser.
+​API Reference
+​POST /api/v1/detect
+​Evaluates an incoming AWS telemetry packet.
+
+​Request Payload:
+```json
+{
+  "station_id": "AWS-101",
+  "temperature": 55.0,
+  "pressure": 1012.4,
+  "humidity": 54.0,
+  "history": [],
+  "peer_stations": []
+}
+```
+
+Response:
+```json
+{
+  "station_id": "AWS-101",
+  "is_anomaly": true,
+  "anomaly_score": 94.0,
+  "status": "ANOMALY DETECTED",
+  "severity": "CRITICAL",
+  "confidence": 89.0,
+  "root_cause": "Temperature sensor spike",
+  "evidence": "Temperature of 55.0°C breaches physical terrestrial limits (-20°C to 60°C)."
+}
 ```

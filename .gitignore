@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+backend/models/*.joblib
+
+# Node / React
+node_modules/
+dist/
+dist-ssr/
+*.local
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/

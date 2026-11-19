@@ -1,0 +1,23 @@
+timestamp,station_id,temperature,pressure,humidity,is_anomaly,anomaly_type,description
+2026-09-05T00:00:00Z,AWS-101,27.4,1012.3,68.2,0,NONE,Nominal nighttime baseline
+2026-09-05T01:00:00Z,AWS-101,26.8,1012.0,71.0,0,NONE,Nominal nocturnal cooling
+2026-09-05T02:00:00Z,AWS-101,26.1,1011.8,73.5,0,NONE,Nominal nocturnal cooling
+2026-09-05T03:00:00Z,AWS-101,25.6,1011.6,76.1,0,NONE,Pre-dawn minimum temperature
+2026-09-05T04:00:00Z,AWS-101,25.4,1011.9,77.4,0,NONE,Pre-dawn high humidity
+2026-09-05T05:00:00Z,AWS-101,26.2,1012.4,74.0,0,NONE,Early solar irradiance warming
+2026-09-05T06:00:00Z,AWS-101,28.1,1013.1,68.5,0,NONE,Nominal morning warming trend
+2026-09-05T07:00:00Z,AWS-101,30.5,1013.4,61.2,0,NONE,Nominal diurnal expansion
+2026-09-05T08:00:00Z,AWS-101,33.0,1012.9,54.0,0,NONE,Nominal diurnal warming
+2026-09-05T09:00:00Z,AWS-101,35.2,1011.8,47.8,0,NONE,Nominal noon heating
+2026-09-05T10:00:00Z,AWS-101,36.8,1010.5,42.5,0,NONE,Afternoon thermal peak
+2026-09-05T11:00:00Z,AWS-101,52.4,1010.2,41.0,1,SPIKE,Instantaneous electrical transient spike on thermistor
+2026-09-05T12:00:00Z,AWS-101,36.9,1009.8,42.1,0,NONE,Post-spike recovery to nominal
+2026-09-05T13:00:00Z,AWS-101,36.2,982.4,43.5,1,SPIKE,Sudden step drop on barometric transducer diaphragm
+2026-09-05T14:00:00Z,AWS-101,35.1,1009.1,45.2,0,NONE,Post-barometer transient recovery
+2026-09-05T15:00:00Z,AWS-101,33.8,1009.6,48.9,0,NONE,Nominal late afternoon decay
+2026-09-05T16:00:00Z,AWS-101,32.4,1010.2,53.1,0,NONE,Sunset transition period
+2026-09-05T17:00:00Z,AWS-101,32.4,1010.2,53.1,1,FROZEN,ADC digital buffer freeze tick 1
+2026-09-05T18:00:00Z,AWS-101,32.4,1010.2,53.1,1,FROZEN,ADC digital buffer freeze tick 2
+2026-09-05T19:00:00Z,AWS-101,32.4,1010.2,53.1,1,FROZEN,ADC digital buffer freeze tick 3
+2026-09-05T20:00:00Z,AWS-101,48.5,1008.4,98.2,1,PHYSICS_CONFLICT,Thermodynamic Magnus dew point boundary violation
+2026-09-05T21:00:00Z,AWS-101,24.1,1012.8,91.4,1,GENUINE_WEATHER_EVENT,Corroborated convective squall line downburst front

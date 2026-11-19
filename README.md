@@ -29,3 +29,18 @@ WeatherGuard AI is a full-stack meteorological telemetry validation engine built
        │
        ▼
 [Explainable AI (XAI) & Non-Destructive Imputation] ──► [React Operations Dashboard]
+```
+Quick Start Guide
+​1. Start the Python ML Backend
+```bash
+cd backend
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+# source venv/bin/activate
+
+pip install -r requirements.txt
+python -m ml_engine.training
+python -m uvicorn ml_engine.api:app --host 127.0.0.1 --port 8000 --reload
+```

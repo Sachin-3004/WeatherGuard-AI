@@ -2,6 +2,10 @@
 
 **AI/ML-Based Intelligent Anomaly Detection & Quality Control for Automatic Weather Stations (AWS)**
 
+🚀 Live Demo: "WeatherGuard AI" (https://weatherguardai.vercel.app)
+
+Deployment: Vercel · Production
+
 WeatherGuard AI is a full-stack meteorological telemetry validation engine built for the Smart India Hackathon (SIH26073). It combines **unsupervised machine learning (`scikit-learn` Isolation Forest)** with **WMO thermodynamic physics** and **mesoscale spatial consensus** to detect sensor anomalies in real time, distinguish hardware failures from genuine extreme weather events, and provide explainable root-cause diagnostics.
 
 ---
